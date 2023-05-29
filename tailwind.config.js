@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         'primary': '#162447',
+        'secondary': '#E43F5A'
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
