@@ -522,38 +522,16 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
+.absolute {
+  position: absolute;
 }
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
+.relative {
+  position: relative;
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
+.inset-0 {
+  inset: 0px;
 }
 
 .m-16 {
@@ -564,26 +542,13 @@ video {
   margin: 1rem;
 }
 
-.m-2 {
-  margin: 0.5rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
 .flex {
   display: flex;
-}
-
-.grid {
-  display: grid;
 }
 
 .hidden {
@@ -614,16 +579,8 @@ video {
   max-width: 20%;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
-}
-
-.flex-grow {
-  flex-grow: 1;
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.max-w-xs {
+  max-width: 20rem;
 }
 
 .flex-wrap {
@@ -664,7 +621,7 @@ video {
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(15 23 36 / var(--tw-bg-opacity));
+  background-color: rgb(22 36 71 / var(--tw-bg-opacity));
 }
 
 .bg-red-200 {
@@ -672,35 +629,9 @@ video {
   background-color: rgb(254 202 202 / var(--tw-bg-opacity));
 }
 
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-.p-10 {
-  padding: 2.5rem;
-}
-
-.p-4 {
-  padding: 1rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 
 .px-4 {
@@ -741,9 +672,27 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
 }
 
 @media (min-width: 640px) {
@@ -760,11 +709,6 @@ video {
 
   .md\:w-1\/2 {
     width: 50%;
-  }
-
-  .md\:object-scale-down {
-    -o-object-fit: scale-down;
-       object-fit: scale-down;
   }
 }
 
