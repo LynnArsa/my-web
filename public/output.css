@@ -766,6 +766,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-\[100px\] {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
@@ -788,6 +793,10 @@ video {
 
 .pt-\[250px\] {
   padding-top: 250px;
+}
+
+.pt-\[190px\] {
+  padding-top: 190px;
 }
 
 .text-center {
