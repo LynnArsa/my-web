@@ -1,0 +1,41 @@
+# change the followings to match your Github username and repo name
+baseurl: "/my-web" # the name of your github repo
+url: "https://lynnarsa.github.io" # the url of your github pages
+
+# site information used in page title, meta data etc.
+title: "My Web"
+description: A Github Pages (Jekyll) template based on TailwindCSS
+
+# color theme for links
+theme-color: indigo # indigo|yellow|pink|green|stone|
+
+# homepage information
+author: LynnArsa
+author-bio: false
+author-image: false
+
+# navigation menu
+show-nav-menu: false
+
+nav-menu:
+- text: false
+  permalink: false
+- text: false
+  permalink: false
+- text: false
+  permalink: false
+
+# use false to turn off any social media links
+twitter: false
+facebook: false
+instagram: false
+github: false
+linkedin: false
+medium: false
+google-scholar: false
+email: false
+
+
+# jekyll plugins - no need to change
+plugins:
+    - jekyll-seo-tag
